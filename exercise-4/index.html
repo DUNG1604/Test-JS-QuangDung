@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Video Player</title>
+</head>
+
+<body>
+    <div class="w-full">
+        <div class="max-w-[1200px] aspect-[16/9] mx-auto relative">
+            <div class="screen-video w-full h-full overflow-hidden rounded-[40px] relative">
+                <video class="w-full h-full object-cover"
+                    src="./assets/videos/Y2meta.app-ĐỪNG HỎI VỀ ANH - MAI TIẾN DŨNG [OFFICIAL MV].mp4"
+                    preload="metadata"></video>
+                <div
+                    class="cursor-pointer center-pause absolute top-[50%] left-[50%] w-[96px] h-[96px] transform -translate-x-[50%] -translate-y-[50%]">
+                    <img class="play-btn w-full h-full" src="./assets/imgs/pausecenter.svg" alt="Play">
+                </div>
+            </div>
+            <div style="background: linear-gradient(180deg, rgba(8, 9, 13, 0) 0%, rgba(8, 9, 13, 0.9) 80.37%);" class="rounded-b-[40px] control-bar w-full absolute bottom-0 px-[40px] z-10 py-[16px]">
+                <div class="w-full rounded-[20px]">
+                    <div class="text-[24px] text-[#ffffff]">Đừng hỏi về anh</div>
+                    <div class="flex justify-between">
+                        <div class="font-[300] text-[#bbbbbb] mt-[8px]">Mai Tiến Dũng</div>
+                        <div class="font-[300] text-[#ffffff] mt-[8px]"><span class="current-time">00:00</span>/<span class="duration-time">00:00</span></div>
+                    </div>
+                    <div
+                        class="progress-bar cursor-pointer w-full bg-[#bbbbbb] rounded-[20px] bg-[rgba(217,217,217,0.4)] h-[2px] overflow-hidden mt-[16px] relative">
+                        <div class="progress-fill bg-white h-full"></div>
+
+                    </div>
+                    <div class="flex justify-between items-center mt-[16px]">
+                        <div class="flex gap-[8px]">
+                            <div class="w-[48px] h-[48px] cursor-pointer">
+                                <img class="pause-play-btn w-full h-full object-cover" src="./assets/imgs/pause.svg"
+                                    alt="Pause">
+                            </div>
+                            <div class="w-[48px] h-[48px] cursor-pointer">
+                                <img class="pre-btn w-full h-full object-cover" src="./assets/imgs/pre.svg"
+                                    alt="Previous">
+                            </div>
+                            <div class="w-[48px] h-[48px] cursor-pointer">
+                                <img class="next-btn w-full h-full object-cover" src="./assets/imgs/next.svg"
+                                    alt="Next">
+                            </div>
+                        </div>
+                        <div class="flex gap-[64px] pr-[56px] ">
+                            <div class="w-[48px] h-[48px] cursor-pointer">
+                                <img class="mute-btn w-full h-full object-cover" src="./assets/imgs/unmute.svg"
+                                    alt="Mute">
+                            </div>
+                            <div class="w-[48px] h-[48px] cursor-pointer">
+                                <img class="fullscr-btn w-full h-full object-cover" src="./assets/imgs/fullscr.svg"
+                                    alt="Fullscreen">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
