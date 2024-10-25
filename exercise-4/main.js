@@ -55,6 +55,7 @@ const playVideo = () => {
 };
 
 const pauseVideo = () => {
+    controlBar.classList.remove('hidden');
     pausePlayBtn.src = isPlayProxy.isPlay ? "./assets/imgs/play.svg" : "./assets/imgs/pause.svg"
     elementPauseCenter.classList.remove("hidden")
     video.pause();
